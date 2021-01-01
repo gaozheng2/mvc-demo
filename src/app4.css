@@ -1,0 +1,22 @@
+#app4 .square {
+  border: 3px solid blue;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#app4 .square.active {
+  animation: change 1s linear infinite alternate;
+}
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: yellow;
+  }
+}
